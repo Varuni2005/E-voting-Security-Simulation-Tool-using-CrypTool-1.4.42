@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Voting Security Simulation Tool</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="card">
+    <h1>E-Voting Security Simulation Tool</h1>
+    <p class="subtitle">
+        AES-256 | SHA-256 | RSA-2048 | TLS
+    </p>
+
+    <textarea id="inputText" placeholder="Enter vote data (Example: Candidate A)"></textarea>
+
+    <div class="buttons">
+        <button onclick="encrypt()">AES Encrypt</button>
+        <button onclick="decrypt()">AES Decrypt</button>
+        <button onclick="hash()">SHA-256 Hash</button>
+        <button onclick="sign()">RSA Sign</button>
+        <button onclick="verify()">RSA Verify</button>
+        <button onclick="tls()">Check TLS</button>
+    </div>
+
+    <div class="output">
+        <h3>Output</h3>
+        <pre id="result"></pre>
+    </div>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
